@@ -1,7 +1,14 @@
+@font-face {
+  font-family: "Radicalis";
+  src: url("fonts/Radicalis.ttf") format("truetype");
+  font-display: swap;
+}
+
 :root {
   --bg: #202020;
-  --header-bg: #181818;
+  --header-bg: #006318;
   --accent: #006318;
+  --highlight: #00A020;
   --text: #ffffff;
   --muted: #cfcfcf;
 }
@@ -26,7 +33,7 @@ body {
 /* Header */
 .site-header {
   background: var(--header-bg);
-  border-bottom: 2px solid var(--accent);
+  border-bottom: 2px solid var(--highlight);
 }
 
 .header-inner {
@@ -40,7 +47,7 @@ body {
 }
 
 .site-name {
-  font-family: "Nothing You Could Do", cursive;
+  font-family: "Radicalis", cursive;
   font-size: 2rem;
   color: var(--text);
   text-decoration: none;
@@ -58,10 +65,10 @@ nav a {
   text-decoration: none;
 }
 
-nav a:hover { text-decoration: underline; text-decoration-color: var(--accent); }
+nav a:hover { text-decoration: underline; }
 
 .sep {
-  color: var(--accent);
+  color: var(--text);
   font-size: 0.6rem;
 }
 
@@ -69,7 +76,7 @@ nav a:hover { text-decoration: underline; text-decoration-color: var(--accent); 
 main { padding-top: 32px; padding-bottom: 64px; }
 
 h1, h2 {
-  color: var(--accent);
+  color: var(--highlight);
   font-weight: 600;
   margin-bottom: 8px;
 }
