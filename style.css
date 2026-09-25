@@ -1,0 +1,90 @@
+:root {
+  --bg: #202020;
+  --header-bg: #181818;
+  --accent: #006318;
+  --text: #ffffff;
+  --muted: #cfcfcf;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* Header */
+.site-header {
+  background: var(--header-bg);
+  border-bottom: 2px solid var(--accent);
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px 24px;
+  padding-top: 18px;
+  padding-bottom: 14px;
+}
+
+.site-name {
+  font-family: "Nothing You Could Do", cursive;
+  font-size: 2rem;
+  color: var(--text);
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.95rem;
+}
+
+nav a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+nav a:hover { text-decoration: underline; text-decoration-color: var(--accent); }
+
+.sep {
+  color: var(--accent);
+  font-size: 0.6rem;
+}
+
+/* Content */
+main { padding-top: 32px; padding-bottom: 64px; }
+
+h1, h2 {
+  color: var(--accent);
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+h1 { font-size: 1.6rem; margin-top: 0; }
+h2 { font-size: 1.3rem; margin-top: 28px; }
+
+p { margin: 0 0 16px; }
+
+a {
+  color: var(--text);
+  text-decoration: underline;
+  text-decoration-color: var(--accent);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 2px;
+}
+
+a:hover { color: var(--muted); }
