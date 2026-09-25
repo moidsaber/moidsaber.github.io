@@ -69,7 +69,7 @@ nav a:hover { text-decoration: underline; }
 
 .sep {
   color: var(--text);
-  font-size: 0.6rem;
+  font-size: 1rem;
 }
 
 /* Content */
