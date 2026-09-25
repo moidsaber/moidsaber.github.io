@@ -1,7 +1,8 @@
 @font-face {
   font-family: "Radicalis";
-  src: url("fonts/Radicalis.ttf") format("truetype");
-  font-display: swap;
+  src: url("fonts/Radicalis.woff2") format("woff2"),
+       url("fonts/Radicalis.otf") format("opentype");
+  font-display: block;
 }
 
 :root {
@@ -47,7 +48,7 @@ body {
 }
 
 .site-name {
-  font-family: "Radicalis", cursive;
+  font-family: "Radicalis", "Inter", sans-serif;
   font-size: 2rem;
   color: var(--text);
   text-decoration: none;
