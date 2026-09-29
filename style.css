@@ -95,3 +95,8 @@ a {
 }
 
 a:hover { color: var(--muted); }
+
+img {
+  max-width: 80%;
+  height: auto;
+}
